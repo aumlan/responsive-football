@@ -20,6 +20,41 @@ body {
     padding: 20px 30px;
 }
 
+@keyframes myanimation {
+    from {
+        transform: rotate(0deg) scale(1);
+        border-radius: 0px;
+    }
+    to {
+        border-radius: 100px;
+        transform: rotate(360deg) scale(0.7);
+    }
+}
+
+@keyframes reverse {
+    from {
+        border-radius: 100px;
+        transform: rotate(360deg) scale(0.7);
+    }
+    to {
+        border-radius: 0px;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.half-width img:hover {
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.half-width img {
+    animation-name: reverse;
+    animation-duration: 1s;
+    width: 550px;
+    overflow: hidden;
+}
+
 
 /* Header Area Styles */
 
@@ -120,8 +155,15 @@ h1 {
 }
 
 .half-width img {
-    width: 100%;
+    width: 550px;
+    overflow: hidden;
 }
+
+
+/* .half-width img:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(1.2);
+} */
 
 .cards {
     display: flex;
@@ -162,4 +204,47 @@ h1 {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 3%;
+}
+
+p {
+    color: dimgray;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.highlight-banner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.half-width-first {
+    width: 34%;
+    float: left;
+    margin-left: 13%;
+    margin-top: 6%;
+}
+
+.highlight-banner .half-width img {
+    margin-left: 13%;
+}
+
+.half-width-first h2 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin: 0px;
+}
+
+.half-width-img img {
+    width: 500px;
+    height: 400px;
+}
+
+.half-width-img {
+    width: 34%;
+    float: left;
+    margin-left: 5%;
 }
