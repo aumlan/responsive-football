@@ -425,8 +425,9 @@ hr {
     .header-logo {
         display: none;
     }
-    .fa .fas {
-        color: white;
+    .fa,
+    .fas {
+        color: white !important;
     }
     .resposive-row {
         width: 100%;
@@ -438,6 +439,9 @@ hr {
         display: grid;
         height: 700px;
     }
+    .half-width {
+        width: 65%;
+    }
     .half-width-first {
         width: 75%;
     }
@@ -448,9 +452,11 @@ hr {
         font-size: 40px;
     }
     .half-width img {
-        width: 350px;
-        margin-left: 30px;
-        margin-top: 10px;
+        width: 400px;
+        margin-top: 25px;
+    }
+    .button {
+        width: 170px;
     }
     /* Highlight area Styles*/
     .highlight-banner {
