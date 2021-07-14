@@ -300,6 +300,12 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    margin-bottom: 2%;
+}
+
+hr {
+    border-top: .005rem solid rgb(197, 197, 197);
+    width: 80%;
 }
 
 .conact-form {
@@ -377,6 +383,14 @@ h3 {
     text-align: center;
 }
 
+.card-banner {
+    margin-bottom: 3%;
+}
+
+.highlight-banner {
+    margin-bottom: 3%;
+}
+
 @media screen and (min-width: 0px) and (max-width: 400px) {
     .header-info {
         display: none;
@@ -411,7 +425,7 @@ h3 {
     .header-logo {
         display: none;
     }
-    .resposive-row fa {
+    .fa .fas {
         color: white;
     }
     .resposive-row {
@@ -425,7 +439,10 @@ h3 {
         height: 700px;
     }
     .half-width-first {
-        width: 60%;
+        width: 75%;
+    }
+    .half-width-first h2 {
+        font-size: 36px;
     }
     .top-banner h2 {
         font-size: 40px;
